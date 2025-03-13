@@ -637,18 +637,19 @@ transform: scale(1.1);
         left: 50%;
         transform: translateX(-50%);
     }
-      .podcast-button, .latest-button {
-        display: inline-block; /* الأزرار مرئية */
-        width: 45%; /* عرض مناسب */
-        margin: 5px 2.5%; /* مسافة بين الأزرار */
+    .podcast-card .podcast-button, 
+    .podcast-card .latest-button {
+        display: inline-block; 
+        width: 45%; 
+        margin: 5px 2.5%;
     }
 
-    /* الزر الثالث يتحرك إلى سطر جديد */
-    .podcast-button:nth-child(3),
-    .latest-button:nth-child(3) {
-        width: 45%; /* زر بحجم عرض الصفحة تقريباً */
+    .podcast-card .podcast-button:nth-child(3),
+    .podcast-card .latest-button:nth-child(3) {
+        width: 45%; 
+        display: block; 
+        margin: 10px auto;
     }
-    
 }
 /**********************************************************************/
 .social-card {
